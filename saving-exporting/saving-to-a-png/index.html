@@ -198,13 +198,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../save-to-png.ipynb" class="md-tabs__link">
+      <a href="./" class="md-tabs__link md-tabs__link--active">
         Exporting
       </a>
     </li>
@@ -616,12 +618,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
       
       
       
@@ -646,11 +650,113 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../save-to-png.ipynb" class="md-nav__link">
-        Exporting as image
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Saving an Altair graph
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Saving an Altair graph
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-easy-way" class="md-nav__link">
+    The easy way
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#saving-altair-graphs-with-selenium-the-first-hard-way" class="md-nav__link">
+    Saving Altair graphs with Selenium (the first hard way)
+  </a>
+  
+    <nav class="md-nav" aria-label="Saving Altair graphs with Selenium (the first hard way)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#installing-things" class="md-nav__link">
+    Installing things
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setting-up-selenium" class="md-nav__link">
+    Setting up Selenium
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#changing-the-quality-of-the-exported-png" class="md-nav__link">
+    Changing the quality of the exported PNG
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#saving-altair-graphs-with-nodejs-the-second-hard-way" class="md-nav__link">
+    Saving Altair graphs with node.js (the second hard way)
+  </a>
+  
+    <nav class="md-nav" aria-label="Saving Altair graphs with node.js (the second hard way)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#installing-things_1" class="md-nav__link">
+    Installing things
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#saving-with-nodejs" class="md-nav__link">
+    Saving with node.js
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -674,7 +780,7 @@
             <article class="md-content__inner md-typeset">
               
 
-    <a href="saving to a file.ipynb" title="Download Notebook" class="md-content__button">
+    <a href="saving-to-a-png.ipynb" title="Download Notebook" class="md-content__button">
         <i class="md-icon">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 20h14v-2H5m14-9h-4V3H9v6H5l7 7 7-7z"/></svg>
         </i>
@@ -684,7 +790,7 @@
 
 
                 
-<a href="https://github.com/jsoma/altair-reference/edit/master/docs/saving-exporting/saving to a file.ipynb" title="Edit this page" class="md-content__button md-icon">
+<a href="https://github.com/jsoma/altair-reference/edit/master/docs/saving-exporting/saving-to-a-png.ipynb" title="Edit this page" class="md-content__button md-icon">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
 </a>
 
@@ -2121,6 +2227,26 @@ chart</div>
       </main>
       
         <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../../text/cjk-text/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Displaying East Asian text (Chinese, Japanese, Korean) in Altair" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Displaying East Asian text (Chinese, Japanese, Korean) in Altair
+            </div>
+          </div>
+        </a>
+      
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
