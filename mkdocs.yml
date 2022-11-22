@@ -23,7 +23,7 @@ nav:
     - Add titles: text/titles.ipynb
     - Chinese/Japanese/Korean text: text/cjk-text.ipynb
   - Exporting:
-    - Exporting as image: saving-exporting/save-to-png.ipynb
+    - Exporting as image: saving-exporting/saving-to-a-png.ipynb
 extra_css:
   - stylesheets/extra.css
 extra:
